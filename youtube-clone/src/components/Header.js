@@ -1,12 +1,13 @@
 import React from 'react';
 import { Navbar, Form, FormControl, Button, Nav, Image } from 'react-bootstrap';
-import { FaMicrophone, FaVideo, FaTh, FaBell } from 'react-icons/fa';
+import { FaMicrophone, FaVideo, FaTh, FaBell, FaHamburger } from 'react-icons/fa';
 import userAvatar from '../assets/avatar.jpg'; // Adjust based on your actual file location
 import '../index.css';
 
 const Header = () => {
   return (
     <Navbar bg="light" variant="light" expand="lg" className="px-3">
+      <button style={{backgroundColor:'transparent', border:'none', outline:'none', marginRight:'10px'}}><img style={{height:"30px"}} src="/menu.png" alt="" /></button>
       <Navbar.Brand href="#home">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" // YouTube logo
